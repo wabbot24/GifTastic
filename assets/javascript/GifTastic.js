@@ -1,13 +1,13 @@
 var topics = ["Spongebob", "Squidward", "Plankton", "Aladdin", "Jafar", "Ursula"];
 
-var buttonNumber = 0
+var buttonNumber = 0;
 function buttonmaker() {
     for (let i = buttonNumber; i < topics.length; i++) {
         var button = $("<button>").text(topics[i]);
         // $("<button>").attr("data-state", "still");
         $("#buttondiv").append(button);
         buttonNumber++;
-        
+
     }
 }
 buttonmaker();
@@ -37,7 +37,7 @@ $(document.body).on("click", "button", function () {
                 // var gifDiv = $("<div>").addClass("gifs").attr("id", imageid);
 
                 var rating = results[i].rating;
-                var link = results[i].
+                var link = results[i];
 
                 var p = $("<p>").text("Rating: " + rating);
 
